@@ -24,4 +24,9 @@ let config = {
     scene: [Smiley]
 }
 
+// A convenience object that contains all sprites
+// To use: my.sprite.sprite_name
+// Where sprite_name is the name of a specific sprite.
+let my = {sprite: {}};
+
 const game = new Phaser.Game(config);

@@ -1,8 +1,7 @@
 class Smiley extends Phaser.Scene {
     constructor() {
         super("smileyScene");
-        this.my = {sprite: {}};  // Create an object to hold sprite bindings
-
+        
         // Create variables to hold constant values for sprite locations
         this.bodyX = 400;
         this.bodyY = 350;
@@ -41,8 +40,7 @@ class Smiley extends Phaser.Scene {
     }
 
     create() {
-        let my = this.my;   // create an alias to this.my for readability
-
+        
         // Create the main body sprite
         my.sprite.body = this.add.sprite(this.bodyX, this.bodyY, "yellowBody");
 
@@ -61,8 +59,7 @@ class Smiley extends Phaser.Scene {
     }
 
     update() {
-        let my = this.my;    // create an alias to this.my for readability
-
+        
         // Since update is called multiple times/second, this.counter acts like
         // a timer, increasing once per clock tick
         this.counter++;
