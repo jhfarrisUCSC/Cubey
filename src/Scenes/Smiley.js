@@ -62,7 +62,7 @@ class Smiley extends Phaser.Scene {
 
         this.mKey = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.M);
         this.mKey.on('down', () => {
-            this.Scene.start('MouseSmiley')
+            this.scene.start('mouseSmiley')
         })
     }
 
